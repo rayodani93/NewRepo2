@@ -1,5 +1,5 @@
-﻿<Window x:Class="proyectoInterfazClima.Window1"
-        x:Name="VentanaSuspenso"
+﻿<Window x:Class="proyectoInterfazClima.Window2"
+        x:Name="ventanaAprobado"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -37,12 +37,9 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <Button x:Name="salida" Grid.Column="10" Grid.Row="11"  Content="Salir" HorizontalAlignment="Left"  VerticalAlignment="Top"  Click="Salida_Click" Background="#FF011ED3" FontWeight="Bold" Foreground="#FFFFF3F3" Grid.ColumnSpan="2" Width="97" Height="25"/>
-        <Label Content="Tienes que ponerte las pilas!" Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="5"  HorizontalAlignment="Left"   VerticalAlignment="Top"  FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Background="White" Foreground="#FFCF0000" OpacityMask="#FF2822AE" />
-        <Image x:Name="fotoTriste" Grid.Column="7" Grid.Row="3" Grid.ColumnSpan="5" Grid.RowSpan="5" HorizontalAlignment="Left"  VerticalAlignment="Top"  Source="alumnoTriste.jpg" RenderTransformOrigin="0.43,1.12"/>
-        <Label x:Name="alumnoTriste" Content="" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="5"  HorizontalAlignment="Left"   VerticalAlignment="Top"  FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Background="White" Foreground="#FFCF0000" OpacityMask="#FF2822AE" Width="320" />
-        
+        <Label  Content="Enhorabuena por tu esfuerzo!" Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="5"  HorizontalAlignment="Left"   VerticalAlignment="Top"  FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Background="White" Foreground="#FFCF0000" OpacityMask="#FF2822AE" />
+        <Label x:Name="alumnoFeliz" Content="" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="5"  HorizontalAlignment="Left"   VerticalAlignment="Top"  FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Background="White" Foreground="#FFCF0000" OpacityMask="#FF2822AE" Width="320" />
         <Label x:Name="notaMedia" Content="" Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="5"  HorizontalAlignment="Left"   VerticalAlignment="Top"  FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Background="White" Foreground="#FFCF0000" OpacityMask="#FF2822AE" Width="320" />
-
-
+        <Image x:Name="fotofeliz" Grid.Column="7" Grid.Row="3" Grid.ColumnSpan="5" Grid.RowSpan="5" HorizontalAlignment="Left"  VerticalAlignment="Top"  Source="alumnoFeliz.jpg" RenderTransformOrigin="0.43,1.12"/>
     </Grid>
 </Window>

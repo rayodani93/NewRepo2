@@ -15,25 +15,25 @@ using System.Windows.Shapes;
 namespace proyectoInterfazClima
 {
     /// <summary>
-    /// Lógica de interacción para Window1.xaml
+    /// Lógica de interacción para Window2.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window2 : Window
     {
-        public Window1()
+        public Window2()
         {
             InitializeComponent();
             MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
-            string alumnoSuspenso = mainWindow.alumnoSuspenso;
+            string alumnoAprobado = mainWindow.alumnoAprobado;
             double media = mainWindow.media;
 
-            if (!string.IsNullOrEmpty(alumnoSuspenso))
+            if (!string.IsNullOrEmpty(alumnoAprobado))
             {
-                alumnoTriste.Content = "Espabila de una vez " + alumnoSuspenso;
+                alumnoFeliz.Content = "Eres muy grande " + alumnoAprobado;
                 notaMedia.Content = $"Nota media: {media.ToString("0.00")}";
             }
             else
             {
-                alumnoTriste.Content = "El nombre del alumno no está disponible";
+                alumnoFeliz.Content = "El nombre del alumno no está disponible";
             }
         }
 

@@ -6,8 +6,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:proyectoInterfazClima"
         mc:Ignorable="d"
-        Title="                                  Calculadora de Medias " Height="450" Width="800">
-    <Grid x:Name="botonSalida">
+        Title=" " Height="450" Width="800">
+    <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -37,23 +37,22 @@
             <RowDefinition />
             
         </Grid.RowDefinitions>
-        <Label Content="Cálculo de medias de estudiantes" HorizontalAlignment="Left" Height="34" Margin="224,19,0,0" VerticalAlignment="Top" Width="420" FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Background="White" Foreground="#FFCF0000" OpacityMask="#FF2822AE" Grid.Column="2"/>
-        <Label Content="Nombre"  HorizontalAlignment="Left" Height="26" Margin="113,102,0,0" VerticalAlignment="Top" Width="108" Background="#FFFF7D7D" FontWeight="Bold" Foreground="#FF0C0A0A"/>
-        <Label x:Name="Primer_examen" Content="Primer examen"  HorizontalAlignment="Left" Height="26" Margin="113,132,0,0" VerticalAlignment="Top" Width="108" Background="#FFFF7D7D" FontWeight="Bold" Foreground="#FF0C0A0A"/>
-        <Label  Content="Segundo examen" HorizontalAlignment="Left" Height="26" Margin="113,162,0,0" VerticalAlignment="Top" Width="108" Background="#FFFF7D7D" FontWeight="Bold" Foreground="#FF0C0A0A"/>
-        <Label  Content="Trabajo de clase" HorizontalAlignment="Left" Height="26" Margin="113,193,0,0" VerticalAlignment="Top" Width="108" Background="#FFFF7D7D" FontWeight="Bold" Foreground="#FF0C0A0A"/>
-        <Label  Content="Asistencia " HorizontalAlignment="Left" Height="26" Margin="113,224,0,0" VerticalAlignment="Top" Width="108" Background="#FFFF7D7D" FontWeight="Bold" Foreground="#FF0C0A0A"/>
-        <Image x:Name="fotoUniversidad"  HorizontalAlignment="Left" Height="197" Margin="435,82,0,0" VerticalAlignment="Top" Width="347" Source="universidad.jpeg" RenderTransformOrigin="0.43,1.12"/>
-        <TextBox x:Name="nombre"  HorizontalAlignment="Left" Height="26" Margin="254,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Background="#FFC6FFC4" FontWeight="Bold"/>
-        <TextBox x:Name="PrimerExamen"  HorizontalAlignment="Left" Height="26" Margin="254,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Background="#FFC6FFC4" FontWeight="Bold"/>
-        <TextBox x:Name="SegundoExamen"  HorizontalAlignment="Left" Height="26" Margin="254,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Background="#FFC6FFC4" FontWeight="Bold"/>
-        <TextBox x:Name="TrabajoClase"  HorizontalAlignment="Left" Height="26" Margin="254,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Background="#FFC6FFC4" FontWeight="Bold"/>
-        <TextBox x:Name="Asistencia"  HorizontalAlignment="Left" Height="26" Margin="254,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Background="#FFC6FFC4" FontWeight="Bold"/>
-        <Button x:Name="botonCalcula"  Content="Calcular media" HorizontalAlignment="Left" Height="41" Margin="113,299,0,0" VerticalAlignment="Top" Width="108" FontWeight="Bold" Background="#FFC52121" Click="botonCalcular"/>
-        <TextBox x:Name="enseñaMedia"  HorizontalAlignment="Left" Height="41" Margin="254,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Background="#FF4BE205"/>
-        <Button x:Name="salida"  Content="Salir" HorizontalAlignment="Left" Margin="654,373,0,0" VerticalAlignment="Top" Width="118" Height="36" Click="botonSalir" Background="#FF011ED3" FontWeight="Bold" Foreground="#FFFFF3F3"/>
+        <Label Content="Cálculo de medias de estudiantes" Grid.Column="4" Grid.Row="0" Grid.ColumnSpan="5"  HorizontalAlignment="Left"   VerticalAlignment="Top"  FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Background="White" Foreground="#FFCF0000" OpacityMask="#FF2822AE" />
+        <Label Content="Nombre" Grid.Column="2" Grid.Row="3"   HorizontalAlignment="Left"  VerticalAlignment="Top"  Background="#FFFF7D7D" FontWeight="Bold" Foreground="#FF0C0A0A" Grid.ColumnSpan="2" Width="108"/>
+        <Label x:Name="Primer_examen" Content="Primer examen" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2"  HorizontalAlignment="Left"  VerticalAlignment="Top"  Background="#FFFF7D7D" FontWeight="Bold" Foreground="#FF0C0A0A" Width="108"/>
+        <Label  Content="Segundo examen" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2"  HorizontalAlignment="Left"   VerticalAlignment="Top"  Background="#FFFF7D7D" FontWeight="Bold" Foreground="#FF0C0A0A"/>
+        <Label  Content="Trabajo de clase" Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="2" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="108" Background="#FFFF7D7D" FontWeight="Bold" Foreground="#FF0C0A0A"/>
+        <Label  Content="Asistencia " Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="108" Background="#FFFF7D7D" FontWeight="Bold" Foreground="#FF0C0A0A"/>
+        <Image x:Name="fotoUniversidad" Grid.Column="7" Grid.Row="3" Grid.ColumnSpan="5" Grid.RowSpan="5" HorizontalAlignment="Left"  VerticalAlignment="Top"  Source="universidad.jpeg" RenderTransformOrigin="0.43,1.12"/>
+        <TextBox x:Name="nombre" Grid.Column="4" Grid.Row="3"  HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Top"  Background="#FFC6FFC4" FontWeight="Bold" Grid.ColumnSpan="2" Width="132" Height="25"/>
+        <TextBox x:Name="PrimerExamen" Grid.Column="4" Grid.Row="4" Grid.ColumnSpan="2" Width="132" Height="25" HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Top"  Background="#FFC6FFC4" FontWeight="Bold"/>
+        <TextBox x:Name="SegundoExamen" Grid.Column="4" Grid.Row="5" Grid.ColumnSpan="2" Width="132" Height="25" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top"  Background="#FFC6FFC4" FontWeight="Bold"/>
+        <TextBox x:Name="TrabajoClase" Grid.Column="4" Grid.Row="6" Grid.ColumnSpan="2" Width="132" Height="25" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top"  Background="#FFC6FFC4" FontWeight="Bold"/>
+        <TextBox x:Name="Asistencia" Grid.Column="4" Grid.Row="7" Grid.ColumnSpan="2" Width="132" Height="25"  HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Top"  Background="#FFC6FFC4" FontWeight="Bold"/>
+        <Button x:Name="botonCalcula" Grid.Column="2" Grid.Row="9" Grid.ColumnSpan="2" Content="Calcular media" HorizontalAlignment="Left"  VerticalAlignment="Top"  FontWeight="Bold" Background="#FFC52121" Click="botonCalcular" Height="35" Width="108"/>
+        <Button x:Name="salida" Grid.Column="10" Grid.Row="11"  Content="Salir" HorizontalAlignment="Left"  VerticalAlignment="Top"  Click="botonSalir" Background="#FF011ED3" FontWeight="Bold" Foreground="#FFFFF3F3" Grid.ColumnSpan="2" Width="97" Height="25"/>
         <Image x:Name="ministerioEducacion" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="3" HorizontalAlignment="Center"  Source="ministerioEducacion.jpg" VerticalAlignment="Top"/>
-        <Image x:Name="domenicoEscarlati"  HorizontalAlignment="Left" Height="99" Margin="439,299,0,0" VerticalAlignment="Top" Width="333" Source="domenico escarlati.png" RenderTransformOrigin="0.489,0.838"/>
+        <Image x:Name="domenicoEscarlati" Grid.Column="7" Grid.Row="9" Grid.ColumnSpan="5" Grid.RowSpan="2" HorizontalAlignment="Left"  VerticalAlignment="Top"  Source="domenico escarlati.png" RenderTransformOrigin="0.489,0.838"/>
 
     </Grid>
 </Window>
